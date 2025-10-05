@@ -1,0 +1,193 @@
+/* Toàn bộ trang */
+body {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 90%;
+    margin: 0;
+    padding: 0;
+    background-color: #E0F7F7;
+    line-height: 1.0;
+}
+
+form {
+    background-color: #ffffff;
+    border: 2px solid #20B2AA;
+    border-radius: 10px;
+    padding: 2em;
+    max-width: 500px;
+    margin: 3em auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Tiêu đề */
+h1 {
+    font-size: 180%;
+    color: #20B2AA;
+    margin-top: 2em;
+    margin-bottom: .5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 140%;
+    color: #20B2AA;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+/* Form label và input */
+label {
+    float: left;
+    width: 7em;
+    margin-bottom: 0.5em;
+    padding-top: .3em;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: 20em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.6em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #20B2AA;
+    outline: none;
+}
+
+/* Nút submit */
+input[type="submit"] {
+    display: block;
+    margin: 1.2em auto;
+    background-color: #20B2AA;
+    color: white;
+    border: none;
+    padding: 0.6em 1.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #1e9d97;
+}
+
+/* Override margin for submit buttons with margin_left class */
+input[type="submit"].margin_left {
+    margin: 1.2em auto;
+    margin-left: auto;
+}
+
+/* Button effects - all submit buttons */
+input[type="submit"] {
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Các phần tử nhỏ khác */
+span {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+br {
+    clear: both;
+}
+
+/* Table */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: .5em;
+}
+
+/* Class phụ trợ */
+.pad_top {
+    padding-top: 0.25em;
+}
+
+.margin_left {
+    margin-left: 0.5em;
+}
+
+.message {
+    color: #d9534f;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Link effects */
+a {
+    color: #20B2AA;
+    text-decoration: none;
+    padding: 0.3em 0.6em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: #20B2AA;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Specific link styles */
+a[href*="userAdmin"] {
+    background-color: #f8f9fa;
+    border: 1px solid #20B2AA;
+}
+
+a[href*="userAdmin"]:hover {
+    background-color: #20B2AA;
+    color: white;
+}
+
+/* Update link */
+a[href*="display_user"] {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+    color: #856404;
+}
+
+a[href*="display_user"]:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Delete link */
+a[href*="delete_user"] {
+    background-color: #f8d7da;
+    border: 1px solid #dc3545;
+    color: #721c24;
+}
+
+a[href*="delete_user"]:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2em;
+    color: #666;
+    font-size: 0.9em;
+}

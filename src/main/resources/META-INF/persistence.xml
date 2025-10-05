@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="EmailPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.example.model.User</class>
+        <properties>
+            <!-- URL kết nối đến cơ sở dữ liệu -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://dpg-d3ghk02li9vc73f509rg-a.singapore-postgres.render.com/dbch13?sslmode=require"/>
+            <!-- Tên người dùng -->
+            <property name="javax.persistence.jdbc.user" value="tructruc"/>
+            <!-- Mật khẩu -->
+            <property name="javax.persistence.jdbc.password" value="FNQkbmdeVUglcWyI2OGOK7ou6R3MyiHr"/>
+            <!-- Driver JDBC cho PostgreSQL -->
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <!-- Dialect của Hibernate cho PostgreSQL -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <!-- Tự động cập nhật schema (cẩn thận khi dùng trong production) -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <!-- Hiển thị SQL query để debug (tùy chọn) -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

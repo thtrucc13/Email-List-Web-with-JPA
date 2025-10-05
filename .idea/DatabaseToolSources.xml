@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseToolSources">
+    <data-source name="localhost" uuid="8a49e1a6-10aa-47f2-8ce0-678760d89823" type="POSTGRES">
+      <base-info connect-type="DB_DEFAULT" product="PostgreSQL" version="17.6" major-version="17" minor-version="6" jdbc-name="PostgreSQL JDBC Driver" jdbc-version="42.7.3" jdbc-major-version="42" jdbc-minor-version="7" />
+      <user-name>quocdat123</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="postgres" operator="@">
+              <node kind="schema">
+                <name qname="information_schema" />
+                <name qname="pg_catalog" />
+                <name qname="public" />
+              </node>
+            </node>
+            <node kind="database" qname="ticket_booking_web" operator="@">
+              <node kind="schema">
+                <name qname="information_schema" />
+                <name qname="pg_catalog" />
+                <name qname="public" />
+              </node>
+            </node>
+            <node kind="database" qname="email_list_db" operator="@">
+              <node kind="schema">
+                <name qname="information_schema" />
+                <name qname="pg_catalog" />
+                <name qname="public" />
+              </node>
+            </node>
+            <node kind="database" qname="emaildb" operator="@">
+              <node kind="schema">
+                <name qname="information_schema" />
+                <name qname="pg_catalog" />
+                <name qname="public" />
+              </node>
+            </node>
+          </node>
+        </introspection-scope>
+      </schema-mapping>
+      <choose-schema-mapping>
+        <introspection-scope>
+          <node negative="1">
+            <node kind="database" qname="email_list_db" operator="@">
+              <node kind="schema">
+                <name qname="public" />
+              </node>
+            </node>
+            <node kind="database" qname="posgres" operator="@">
+              <node kind="schema">
+                <name qname="public" />
+              </node>
+            </node>
+            <node kind="database" qname="postgres" operator="@">
+              <node kind="schema">
+                <name qname="public" />
+              </node>
+            </node>
+          </node>
+        </introspection-scope>
+      </choose-schema-mapping>
+      <url>jdbc:postgresql://localhost:5432/postgres</url>
+      <remarks>connect</remarks>
+      <vm-options />
+      <driver-info id="postgresql" />
+      <ssh-properties enabled="false" />
+      <ssl-config enabled="false">
+        <uuid />
+        <caFile />
+        <clientCertificateFile />
+        <clientKeyFile />
+        <sslMode>REQUIRE</sslMode>
+      </ssl-config>
+    </data-source>
+  </component>
+</project>
